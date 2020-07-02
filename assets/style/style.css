@@ -12,7 +12,7 @@ body {
 }
 
 main {
-    padding: 1000px;
+    padding: 1000px 0;
     overflow: auto;
 }
 
@@ -66,11 +66,12 @@ nav a:hover {
     background-color: #30cae9ab;
     margin-top: 20px;
     display: inline-block;
-    padding: 10px 20px 10px 20px;
-    border-radius: 5px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
     color: white;
     font-size: 18px;
-    transition: 500ms;
+    transition: 300ms;
+
 }
 
 .btn:hover{
@@ -123,24 +124,18 @@ footer>p {
 }
 
 /* untuk tab dan android */
-@media screen and (max-width: 1250px) {
-
-    #content,
-    aside {
-        width: 100%;
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 490px) {
-
-    #content,
-    aside {
-        padding: 0;
-    }
+@media screen and (max-width: 955px) {
 
     nav {
         padding: 1px;
+    }
+
+    .jumbotron {
+        padding: 60px;
+    }
+
+    .logo {
+        margin-right: 10px;
     }
 
     header>.jumbotron>h1 {
@@ -152,79 +147,49 @@ footer>p {
         font-size: 24px;
     }
 
+    footer p span a i {
+        font-size: 24px;
+    }
+
 }
 
-@media screen and (max-width: 400px) {
-
-    #content,
-    aside {
-        padding: 0;
-    }
+@media screen and (max-width: 660px) {
 
     nav {
         padding: 1px;
     }
 
     nav li {
-        margin: 20px 5px;
+        margin: 5px;
+    }
+    
+    nav a {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .logo {
+        margin-right: 5px;
     }
 
     header>.jumbotron>h1 {
         letter-spacing: 2px;
     }
 
-    footer>p {
-        font-size: 14px;
+    footer>p>span {
+        margin: 0;
+        font-size: 24px;
     }
 
-    footer>p>span>a {
-        font-size: 20px;
-    }
-
-    .copyright {
+    p {
         font-size: 10px;
     }
-}
-
-@media screen and (max-width: 325px) {
-
-    #content,
-    aside {
-        padding: 0;
-    }
-
-    nav {
-        padding: 1px;
-    }
-
-    nav li {
-        margin: 20px 0px;
-    }
-
-    nav li a {
-        font-size: 14px;
-    }
-
-    header>.jumbotron>h1 {
-        letter-spacing: 0;
-        font-size: 27px;
-    }
-
-    .profile img {
-        width: 130px;
-    }
-
-    footer>p {
-        font-size: 8px;
+    footer p span a i {
+        font-size: 16px;
     }
 
     .copyright {
-        font-size: 7px;
+        margin-top: 20px;
     }
-}
 
-@media screen and (max-width: 285px) {
-    .hidden {
-        display: none;
-    }
 }
