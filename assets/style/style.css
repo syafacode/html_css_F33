@@ -11,13 +11,17 @@ body {
     padding: 0;
 }
 
-main {
-    padding: 1000px 0;
-    overflow: auto;
+.container {
+    width: 80%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
     display: inline;
+    z-index: 11;
 }
 
 nav {
@@ -25,13 +29,15 @@ nav {
     padding: 5px;
     position: sticky;
     top: 0;
+
+    z-index: 11;
 }
 
 nav li {
     display: inline;
     list-style-type: none;
     margin: 20px;
-    
+
 }
 
 nav a {
@@ -62,6 +68,18 @@ nav a:hover {
     color: rgba(255, 255, 255, 0.925);
 }
 
+header>.jumbotron>h1 {
+    letter-spacing: 20px;
+}
+
+header>.jumbotron>p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
 .btn {
     background-color: #30cae9ab;
     margin-top: 20px;
@@ -74,21 +92,96 @@ nav a:hover {
 
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #30C9E9;
 }
 
-header>.jumbotron>h1 {
-    letter-spacing: 20px;
+/* main */
+.lesson-wrapper {
+    height: 580px;
+    background-color: #ffffff;
+    text-align: center;
 }
 
-header>.jumbotron>p {
-    font-size: 16px;
+.lessons h2 {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-weight: normal;
+    text-align: center;
+    color: #5f5d60;
 }
 
-a {
-    text-decoration: none;
+.lesson {
+    width: 25%;
+    float: left;
 }
+
+.lesson-icon {
+    position: relative;
+}
+
+.buku {
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+.txt-content {
+    width: 80%;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 10px;
+    color: #979797;
+}
+
+
+/* main menu */
+.message-wrapper {
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.message {
+    padding: 15px 40px;
+    background-color: #30C9E9;
+    cursor: pointer;
+    box-shadow: 0 7px #008ca8;
+}
+
+.message:active {
+    box-shadow: none;
+    position: relative;
+    top: 7px;
+}
+
+/* anggota */
+.anggota-kelompok {
+    height: 580px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.semua-anggota h2 {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-weight: normal;
+    text-align: center;
+    color: #363636;
+}
+
+.anggota {
+    width: 25%;
+    float: left;
+}
+
+.nama {
+    position: relative;
+}
+
+.nama img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 
 footer {
     padding: 20px;
@@ -124,6 +217,22 @@ footer>p {
 }
 
 /* untuk tab dan android */
+@media screen and (max-width: 1030px){
+
+    .lesson-icon {
+        position: relative;
+    }
+
+    .anggota img{
+        width: 150px;
+    }
+
+    .lesson img{
+        width: 150px;
+    }
+    
+}
+
 @media screen and (max-width: 955px) {
 
     nav {
@@ -153,6 +262,28 @@ footer>p {
 
 }
 
+@media screen and (max-width: 820px){
+
+    .anggota img{
+        width: 100px;
+    }
+
+    .lesson img{
+        width: 100px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .anggota-kelompok {
+        height: 450px;
+    }
+
+    
+    
+}
+
 @media screen and (max-width: 660px) {
 
     nav {
@@ -162,7 +293,7 @@ footer>p {
     nav li {
         margin: 5px;
     }
-    
+
     nav a {
         font-size: 16px;
         font-weight: 400;
@@ -181,9 +312,10 @@ footer>p {
         font-size: 24px;
     }
 
-    p {
-        font-size: 10px;
+    .txt-content {
+        font-size: 14px;
     }
+
     footer p span a i {
         font-size: 16px;
     }
@@ -193,3 +325,100 @@ footer>p {
     }
 
 }
+
+@media screen and (max-width: 565px){
+
+    .anggota img{
+        width: 80px;
+    }
+
+    .lesson {
+        width: 50%;
+    }
+
+    .anggota {
+        width: 50%;
+    }
+
+    .lesson img{
+        width: 80px;
+    }
+
+    .txt-content {
+        font-size: 10px;
+    }
+
+    .anggota-kelompok {
+        height: 500px;
+    }
+
+    .message-wrapper {
+        margin-top: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 465px){
+
+    .anggota img{
+        width: 80px;
+    }
+
+    .lesson {
+        width: 50%;
+    }
+
+    .anggota {
+        width: 50%;
+    }
+
+    .lesson img{
+        width: 80px;
+    }
+
+    .txt-content {
+        font-size: 8px;
+    }
+
+    .anggota-kelompok {
+        height: 500px;
+    }
+
+    .message-wrapper {
+        margin-top: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 387px){
+
+    .anggota img{
+        width: 80px;
+    }
+
+    .lesson {
+        width: 50%;
+    }
+
+    .anggota {
+        width: 50%;
+    }
+
+    .lesson img{
+        width: 70px;
+    }
+
+    .txt-content {
+        font-size: 6px;
+    }
+
+    .anggota-kelompok {
+        height: 500px;
+    }
+
+    .message-wrapper {
+        margin-top: 30px;
+    }
+    
+}
+
